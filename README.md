@@ -15,3 +15,10 @@ The initial approach was training a TensorFlow model on my M4 Pro Macbook Pro, t
 The required samples for the machine learning model to accurately predict a voice command would create a file much too large for the ESP to store.
 
 The solution was once again was to implement it on the proxy. This utilizes the Google Speech to Text API, sending back the result.
+
+## Running
+To run, you need a Google Cloud Account as well as a Photomath account. 
+For Google Cloud, you need a service account with access to the Speech to Text API. Save the JSON to `creds.json` 
+For Photomath, you need to figure a way to retrieve your Bearer token. A proxy such as Charles can be of use.
+
+Once all preq's have been fufilled, run `python3 app.py`
